@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Suite1" parallel="tests" thread-count="1">
     <test name="test1">
-        <parameter name="BaseUrl" value="http://www.hcltech.com/"/>
-        <parameter name="SiteLevel" value="15July"/>
-        <parameter name="ExcelFile" value="urlList.xlsx"/>
+        <parameter name="BaseUrl" value="http://www.maxhealthcare.in"/>
+        <parameter name="SiteLevel" value="1August"/>
+        <parameter name="ExcelFile" value="UrlList.xlsx"/>
         <classes>
             <class name="Screenshot.TakeScreenshot" />
         </classes>

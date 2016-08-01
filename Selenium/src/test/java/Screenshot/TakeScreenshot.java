@@ -37,14 +37,14 @@ import java.io.IOException;
  */
 public class TakeScreenshot {
     ScreenshotFunctions func;
-    String Structure = "Multiple";
+    String Structure = "Single";
     String Browser = "Firefox";
     String ScreenshotThrough = "Stack";
     String ReadTitleAndUrlFrom = "Excel";
     String Path = "TestingFiles\\Screenshots\\HCL\\";
 
-    String SheetName = "Sheet1";
-    String ExcelFilePath = "C:\\Users\\aman\\Downloads\\TestingFiles\\Screenshots\\";
+    String SheetName = "UrlList";
+    String ExcelFilePath = "C:\\Users\\admin\\Downloads\\";
 
     @Test
     @Parameters({"BaseUrl","SiteLevel","ExcelFile"})
@@ -78,11 +78,11 @@ public class TakeScreenshot {
 
     private String[][] GetSelections() {
         return new String[][]{
-                {"OS X", "Yosemite", "safari", "8.0", "macyos_safari_8.0"},
                 {"Windows", "8.1", "firefox", "37.0", "win8.1_firefox_37.0"},
                 {"Windows", "8.1", "chrome", "42.0", "win8.1_chrome_42.0"},
-                {"OS X", "Mavericks", "safari", "7.0", "macmav_safari_7.0"},
+                {"Windows", "8.1", "opera", "12.16", "win8.1_opera_12.16"},
                 {"Windows", "8.1", "ie", "11.0", "win8.1_ie_11.0"},
+                {"Windows", "8", "ie", "10.0", "win8_ie_10.0"},
                 {"Windows", "7", "ie", "9.0", "win7_ie_9.0"},
         };
     }

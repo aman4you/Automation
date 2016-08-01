@@ -24,9 +24,17 @@ public class ScreenshotCompare {
 
         // Merge folders
         func.MergeFolders(SiteLevel1, SiteLevel2, ScreenshotThrough, SitePath, Structure);
-//        func.ChangeWidth(SiteLevel1, SiteLevel2, ScreenshotThrough, SitePath);
+        // func.ChangeWidth(SiteLevel1, SiteLevel2, ScreenshotThrough, SitePath);
 
         // Screenshot comparision
+        /**
+         * After merge the screenshots of two sitelevel, we will do screenshot comparision.
+         * 1. First specify the folder name with path in config file that contain screenshots.
+         * 2. Open console and move to folder that contains screenshots.
+         * 3. Run command "wraith crop_images configFileName" to cut the images at same height.
+         * 4. Run command "wraith compare_images configFileName" to generate diff image.
+         */
+
         Process p = null;
         String Config_Path = "/home/innoraft/TestingFiles/Screenshots/";
         String Config_File = Config_Path + "configs/config_compare.yaml";
